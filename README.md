@@ -55,5 +55,7 @@ Note: If you are on an NVIDIA GPU machine, you can install `faiss-gpu` for faste
     ```
     streamlit run TedTalks.py
     ```
-    This will launch the application in your web browser.
-"""
+    This will launch the application in your web browser, by default at:
+    ```
+    http://localhost:8501
+    ```
