@@ -1,15 +1,15 @@
-# 🎤 TED Talk Recommender
+# TED Talk Recommender
 
 This is a **Streamlit** application that recommends TED Talks based on a user-provided query. It uses **semantic search** to find the most relevant talks, allowing users to discover content based on topics, phrases, or keywords rather than just title matches.
 
-## ✨ Features
+## Features
 
 * **Semantic Search**: Utilizes a pre-trained **Sentence Transformer** model (`all-MiniLM-L6-v2`) to embed both the TED Talk transcripts and the user query, enabling context-aware recommendations.
 * **Efficient Indexing**: Uses a **FAISS (Facebook AI Similarity Search)** (`faiss-cpu`) index for fast and scalable similarity search across the entire dataset of TED Talks.
 * **Intuitive UI**: Built with Streamlit, the app provides a simple and clean user interface for entering queries and displaying results.
 * **Responsive Design**: The UI is designed with a card-based layout using custom CSS to look good on different screen sizes and supports both light and dark modes.
 
-## 🚀 How It Works
+## How It Works
 
 The application operates in two main stages:
 
@@ -26,22 +26,20 @@ The application operates in two main stages:
 
 ---
 
-## 🛠️ Project Structure
+## Project Structure
 
 The project includes two main scripts:
 
 * `TedTalks.py`: This is the main Streamlit application file. It loads the pre-built FAISS index and embeddings, handles user input, and displays the recommendations.
 * `TedTalksEmbeddingBuilder.py`: This script is used to pre-process the data and create the FAISS index and embeddings. It includes functions for data cleaning, text embedding, index creation, and saving the necessary files. This part of the code is not run by the Streamlit app itself but is a prerequisite for its functionality.
 
-## 📦 Requirements
+## Requirements
 
 To run this application, you need to install the following libraries:
 
 ```pip install streamlit pandas faiss-cpu sentence-transformers numpy scikit-learn matplotlib umap-learn```
 
-Note: If you are on an NVIDIA GPU machine, you can install `faiss-gpu` for faster index building and querying.
-
-## 🏃 Getting Started
+## Getting Started
 
 1.  **Clone the repository:**
     ```
